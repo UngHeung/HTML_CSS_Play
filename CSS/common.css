@@ -25,3 +25,39 @@
     --shake-5: shake .5s alternate infinite;
     --vibration-2: vibration .1s alternate-reverse 2;
 }
+
+/* # scroll */
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    height: auto;
+    border-radius: 3px;
+    background-color: #333333;
+}
+
+/* # animation */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 3px);
+    }
+}
+
+@keyframes vibration {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+}
