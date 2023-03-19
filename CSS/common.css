@@ -180,3 +180,11 @@ footer>div {
         transform: rotate(5deg);
     }
 }
+
+/* # media */
+@media screen and (max-width: 910px) {
+    footer>div {
+        padding: 0 50px;
+        box-sizing: border-box;
+    }
+}
