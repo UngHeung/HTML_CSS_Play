@@ -1,0 +1,27 @@
+/* # root */
+:root {
+    --font-PS2: 'Press Start 2P', cursive;
+    --font-Bar: 'Barlow', sans-serif;
+
+    --font-size-category-title: 25px;
+    --font-size-footer: 14px;
+
+    --color-main: #224A88;
+    --color-sub: #C50024;
+    --color-wrap: #B8B8B8;
+    --color-display: #CAD362;
+    --color-black: #333333;
+
+    --color-set1: #D082FF;
+    --color-set2: #E94D4D;
+    --color-set3: #EFA651;
+    --color-set4: #69E685;
+    --color-set5: #69B2E6;
+    --color-set6: #F3FF69;
+
+    --blink-2: blink .2s alternate infinite;
+    --blink-5: blink .5s alternate infinite;
+    --shake-2: shake .2s alternate infinite;
+    --shake-5: shake .5s alternate infinite;
+    --vibration-2: vibration .1s alternate-reverse 2;
+}
