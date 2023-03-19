@@ -81,6 +81,24 @@ h1::before {
     color: var(--color-main);
 }
 
+/* navi */
+header>input[type="checkbox"] {
+    display: none;
+}
+
+header>label {
+    font-size: var(--font-size-footer);
+    color: var(--color-main);
+    text-align: center;
+
+    animation: var(--shake-5);
+}
+
+
+header>label>img {
+    margin: 0 0 2px 4px;
+}
+
 /* # animation */
 @keyframes blink {
     0% {
