@@ -99,6 +99,65 @@ header>label>img {
     margin: 0 0 2px 4px;
 }
 
+/* # footer */
+footer {
+    width: 100vw;
+    height: 100px;
+
+    box-shadow: 0 -3px 3px rgba(0, 0, 0, .3);
+}
+
+footer * {
+    font-family: var(--font-Bar);
+    font-size: var(--font-size-footer);
+    color: var(--color-main);
+}
+
+footer>div {
+    max-width: 900px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* mail */
+.mail {
+    height: 100px;
+    text-align: left;
+    line-height: 100px;
+
+    float: left;
+}
+
+.mail img {
+    vertical-align: middle;
+    margin: 0 4px 2px 0;
+}
+
+/* blog */
+.blog {
+    text-align: right;
+    float: right;
+}
+
+.blog>article {
+    height: 50px;
+    line-height: 50px;
+}
+
+.blog a {
+    margin-left: 7px;
+}
+
+.blog img {
+    vertical-align: bottom;
+    margin-bottom: 7px;
+}
+
+.blog>p {
+    height: 50px;
+    line-height: 30px;
+}
+
 /* # animation */
 @keyframes blink {
     0% {
