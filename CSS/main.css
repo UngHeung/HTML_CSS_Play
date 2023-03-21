@@ -93,10 +93,6 @@ li:not(.soon):hover h2>img {
     animation: var(--blink-2)
 }
 
-/* # navi */
-
-
-
 /* # media */
 @media screen and (max-width: 910px) {
     .content-wrap {

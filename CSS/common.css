@@ -90,18 +90,122 @@ header>input[type="checkbox"] {
     display: none;
 }
 
+header>input[type="checkbox"]:checked+label+nav {
+    height: calc(100vh - 170px);
+}
+
 header>label {
     font-size: var(--font-size-footer);
     color: var(--color-main);
     text-align: center;
 
     animation: var(--shake-5);
+    cursor: pointer;
 }
 
 
 header>label>img {
     margin: 0 0 2px 4px;
 }
+
+/* content navigation */
+.content-navi {
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 450px);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 900px;
+    height: 0;
+
+    background-color: rgba(165, 165, 165, 0.9);
+
+    transition: height .5s cubic-bezier(0, 0.03, 0, 0.85);
+    overflow-y: hidden;
+}
+
+.content-navi a,
+.content-navi label {
+    display: inline-block;
+    position: relative;
+
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    color: white;
+
+    transition: text-shadow, transform .2s, .2s;
+    cursor: pointer;
+}
+
+.to-main {
+    margin-top: 50px;
+}
+
+.to-main>a {
+    color: var(--color-black);
+}
+
+.to-about>a {
+    color: var(--color-main);
+}
+
+.menu-closed>label {
+    color: var(--color-sub);
+}
+
+.content-navi a::before,
+.content-navi a::after,
+.content-navi label::before,
+.content-navi label::after {
+    position: absolute;
+    top: -4px;
+}
+
+.content-navi a::before,
+.content-navi label::before {
+    content: url(../images/icon/menu-hover-before.svg);
+    left: -20px;
+}
+
+.content-navi a::after,
+.content-navi label::after {
+    content: url(../images/icon/menu-hover-after.svg);
+    right: -20px;
+}
+
+.content-navi a::before,
+.content-navi a::after,
+.content-navi label::before,
+.content-navi label::after {
+    display: none;
+}
+
+/* content menu hover */
+.content-navi a:hover,
+.content-navi label:hover {
+    text-shadow: 2px 2px #dddddd;
+    transform: translate(-2px, -2px);
+}
+
+.content-navi a:active,
+.content-navi label:active {
+    text-shadow: none;
+    transform: translate(2px, 2px);
+}
+
+.content-navi a:hover::before,
+.content-navi a:hover::after,
+.content-navi label:hover::before,
+.content-navi label:hover::after {
+    display: inline-block;
+    animation: var(--blink-2);
+}
+
 
 /* # footer */
 footer {
