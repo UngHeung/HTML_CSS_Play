@@ -22,3 +22,10 @@ body {
     -ms-user-select: none;
     user-select: none
 }
+
+/*
+
+{{$template}}/inc/common.css
+{{$template}}/inc/main.css
+{{$template}}/inc/reset.css
+*/
