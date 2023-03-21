@@ -86,3 +86,10 @@ h2>img {
 li:not(.soon):hover h2>img {
     animation: var(--blink-2)
 }
+
+/* # media */
+@media screen and (max-width: 910px) {
+    .content-wrap {
+        margin-bottom: 70px;
+    }
+}
