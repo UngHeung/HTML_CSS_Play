@@ -77,11 +77,11 @@ h1 {
 
 h1::before {
     content: "HTML&CSS";
-    margin-right: 3px;
-    margin-left: -70px;
+    margin-right: 5px;
 
-    font-family: var(--font-PS2);
-    font-size: 12px;
+    font-family: var(--font-Bar);
+    font-size: 18px;
+    font-weight: 800;
     color: var(--color-main);
 }
 
