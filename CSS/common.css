@@ -12,13 +12,7 @@
     --color-display: #CAD362;
     --color-black: #333333;
     --color-back: #f0f0f0;
-
-    --color-set1: #D082FF;
-    --color-set2: #E94D4D;
-    --color-set3: #EFA651;
-    --color-set4: #69E685;
-    --color-set5: #69B2E6;
-    --color-set6: #F3FF69;
+    --color-code: #b5f189;
 
     --blink-2: blink .2s alternate infinite;
     --blink-5: blink .5s alternate infinite;
@@ -164,6 +158,8 @@ header>label>img {
 .content-navi label::after {
     position: absolute;
     top: -4px;
+
+    display: none;
 }
 
 .content-navi a::before,
@@ -176,13 +172,6 @@ header>label>img {
 .content-navi label::after {
     content: url(../images/icon/menu-hover-after.svg);
     right: -20px;
-}
-
-.content-navi a::before,
-.content-navi a::after,
-.content-navi label::before,
-.content-navi label::after {
-    display: none;
 }
 
 /* content menu hover */
@@ -304,6 +293,10 @@ footer>div {
 
 /* # media */
 @media screen and (max-width: 910px) {
+    .content-menu>li:nth-child(even) {
+        /* margin-left: 20px; */
+    }
+
     footer>div {
         padding: 0 50px;
         box-sizing: border-box;
