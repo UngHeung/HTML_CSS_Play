@@ -9,3 +9,145 @@
 
     overflow-y: auto;
 }
+
+/* # display, input */
+.display-wrap,
+.input-wrap {
+    width: 800px;
+
+    border-radius: 5px;
+}
+
+/* display wrapper */
+.display-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 350px;
+    margin: 50px auto;
+
+    background-color: var(--color-display);
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, .3);
+
+    overflow: hidden;
+}
+
+.input-wrap {
+    background-color: #7e7e7e;
+}
+
+.display-wrap>.box {
+    width: 50px;
+    height: 50px;
+    background-color: palevioletred;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    box-sizing: border-box;
+    outline-style: solid;
+    outline-offset: 10px;
+    outline-color: red;
+
+    transition: .3;
+}
+
+/* input wrapper */
+.input-wrap {
+    height: 250px;
+    margin: 0 auto;
+    padding: 20px;
+
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    overflow-y: auto;
+}
+
+.input-wrap>ul>li:not(:last-child) {
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.input-wrap h2 {
+    margin-bottom: 20px;
+}
+
+.input-wrap h2,
+.input-wrap label {
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+}
+
+.input-wrap h2+ul li {
+    display: inline-block;
+}
+
+/* input option radio button */
+.input-wrap input[type="radio"] {
+    display: none;
+}
+
+.input-wrap label {
+    position: relative;
+    display: inline-block;
+
+    margin: 0 20px 20px 20px;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: transform, color .2s, .2s;
+}
+
+.input-wrap label::before,
+.input-wrap label::after {
+    position: absolute;
+    top: 1px;
+
+    display: none;
+}
+
+.input-wrap label::before {
+    content: url(../images/icon/menu-hover-before.svg);
+    left: -15px;
+}
+
+.input-wrap label::after {
+    content: url(../images/icon/menu-hover-after.svg);
+    right: -15px;
+}
+
+.input-wrap label:hover::before,
+.input-wrap label:hover::after,
+.input-wrap input[type="radio"]:checked+label::before,
+.input-wrap input[type="radio"]:checked+label::after {
+    display: inline-block;
+    animation: var(--blink-5);
+}
+
+.input-wrap input[type="radio"]:checked+label,
+.input-wrap input[type="radio"]:checked+label {
+    color: rgb(206, 206, 206);
+    transform: translate(0, 3px);
+}
+
+
+
+
+
+/* # media */
+@media screen and (max-width: 900px) {
+    .content-wrap {
+        overflow-x: hidden;
+    }
+
+    /* # display, input */
+    .display-wrap,
+    .input-wrap {
+        width: 90vw;
+    }
+}
