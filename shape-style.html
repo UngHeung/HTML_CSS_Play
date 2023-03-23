@@ -6,22 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shape style</title>
+    <!-- font Barlow  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/shape.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="favicon.svg">
 </head>
-<!-- font Barlow  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-<!-- font Press Start 2P -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<!-- style -->
-<link rel="stylesheet" href="CSS/reset.css">
-<link rel="stylesheet" href="CSS/common.css">
-<link rel="stylesheet" href="CSS/shape.css">
-<!-- favicon -->
-<link rel="icon" type="image/svg" href="favicon.svg">
 
 <body>
     <!-- header : h1, nav -->
@@ -34,6 +34,7 @@
                 <li><a href="shape-style.html">shape</a></li>
                 <!--
                 <li><a href="font-style.html">font</a></li>
+                <li><a href="shadow-style.html">font</a></li>
                 <li><a href="space-style.html">space</a></li>
                 <li><a href="position-style.html">position</a></li>
                 <li><a href="transform-style.html">transform</a></li>
@@ -53,12 +54,13 @@
         </section>
         <!-- input wrapper -->
         <section class="input-wrap">
-            <ul>
+            <ul id="select_list">
                 <li>
+                    <!-- width -->
                     <h2>width:</h2>
-                    <ul>
+                    <ul id="width">
                         <li>
-                            <input type="radio" name="width" id="width-50px">
+                            <input type="radio" name="width" id="width-50px" checked>
                             <label for="width-50px">50px</label>
                         </li>
                         <li>
@@ -80,10 +82,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- height -->
                     <h2>height:</h2>
-                    <ul>
+                    <ul id="height">
                         <li>
-                            <input type="radio" name="height" id="height-50px">
+                            <input type="radio" name="height" id="height-50px" checked>
                             <label for="height-50px">50px</label>
                         </li>
                         <li>
@@ -105,8 +108,13 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- background-color -->
                     <h2>background-color:</h2>
-                    <ul>
+                    <ul id="bg_color">
+                        <li>
+                            <input type="radio" name="bg-color" id="bg-black" checked>
+                            <label for="bg-black">black</label>
+                        </li>
                         <li>
                             <input type="radio" name="bg-color" id="bg-palevioletred">
                             <label for="bg-palevioletred">palevioletred</label>
@@ -134,10 +142,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- border-radius -->
                     <h2>border-radius:</h2>
-                    <ul>
+                    <ul id="bd_radius">
                         <li>
-                            <input type="radio" name="radius" id="radius-none">
+                            <input type="radio" name="radius" id="radius-none" checked>
                             <label for="radius-none">none</label>
                         </li>
                         <li>
@@ -154,15 +163,16 @@
                         </li>
                         <li>
                             <input type="radio" name="radius" id="radius-50%">
-                            <label for="radius-50">50</label>
+                            <label for="radius-50">50%</label>
                         </li>
                     </ul>
                 </li>
                 <li>
+                    <!-- border-style -->
                     <h2>border-style:</h2>
-                    <ul>
+                    <ul id="bd_style">
                         <li>
-                            <input type="radio" name="bd-style" id="bd-none">
+                            <input type="radio" name="bd-style" id="bd-none" checked>
                             <label for="bd-none">none</label>
                         </li>
                         <li>
@@ -196,10 +206,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- border-width -->
                     <h2>border-width:</h2>
-                    <ul>
+                    <ul id="bd_width">
                         <li>
-                            <input type="radio" name="bd-width" id="bd-1px">
+                            <input type="radio" name="bd-width" id="bd-1px" checked>
                             <label for="bd-1px">1px</label>
                         </li>
                         <li>
@@ -217,8 +228,13 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- border - color -->
                     <h2>border-color:</h2>
-                    <ul>
+                    <ul id="bd_color">
+                        <li>
+                            <input type="radio" name="bd-color" id="bd-black" checked>
+                            <label for="bd-black">black</label>
+                        </li>
                         <li>
                             <input type="radio" name="bd-color" id="bd-palevioletred">
                             <label for="bd-palevioletred">palevioletred</label>
@@ -246,10 +262,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- box-sizing -->
                     <h2>box-sizing:</h2>
-                    <ul>
+                    <ul id="bo_sizing">
                         <li>
-                            <input type="radio" name="box-sizing" id="counter-box">
+                            <input type="radio" name="box-sizing" id="counter-box" checked>
                             <label for="counter-box">counter-box</label>
                         </li>
                         <li>
@@ -259,10 +276,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- outline-style -->
                     <h2>outline-style:</h2>
-                    <ul>
+                    <ul id="ol_style">
                         <li>
-                            <input type="radio" name="ol-style" id="ol-none">
+                            <input type="radio" name="ol-style" id="ol-none" checked>
                             <label for="ol-none">none</label>
                         </li>
                         <li>
@@ -296,11 +314,12 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- outline-offset -->
                     <h2>outline-offset:</h2>
-                    <ul>
+                    <ul id="ol_offset">
                         <li>
-                            <input type="radio" name="ol-offset" id="ol-offset-1px">
-                            <label for="ol-offset-1px">1px</label>
+                            <input type="radio" name="ol-offset" id="ol-offset-0px" checked>
+                            <label for="ol-offset-0px">0px</label>
                         </li>
                         <li>
                             <input type="radio" name="ol-offset" id="ol-offset-5px">
@@ -317,10 +336,11 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- outline-width -->
                     <h2>outline-width:</h2>
-                    <ul>
+                    <ul id="ol_width">
                         <li>
-                            <input type="radio" name="ol-width" id="ol-1px">
+                            <input type="radio" name="ol-width" id="ol-1px" checked>
                             <label for="ol-1px">1px</label>
                         </li>
                         <li>
@@ -338,8 +358,13 @@
                     </ul>
                 </li>
                 <li>
+                    <!-- outline-color -->
                     <h2>outline-color:</h2>
-                    <ul>
+                    <ul id="ol_color">
+                        <li>
+                            <input type="radio" name="ol-color" id="ol-black" checked>
+                            <label for="ol-black">black</label>
+                        </li>
                         <li>
                             <input type="radio" name="ol-color" id="ol-palevioletred">
                             <label for="ol-palevioletred">palevioletred</label>
@@ -363,106 +388,6 @@
                         <li>
                             <input type="radio" name="ol-color" id="ol-orangered">
                             <label for="ol-orangered">orangered</label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>box-shadow:</h2>
-                    <ul>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>box-shadow:</h2>
-                    <ul>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>box-shadow: inset</h2>
-                    <ul>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>box-shadow: inset</h2>
-                    <ul>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
-                        </li>
-                        <li>
-                            <input type="radio" name="bx-shadow" id="">
-                            <label for=""></label>
                         </li>
                     </ul>
                 </li>
@@ -493,5 +418,6 @@
     </footer>
 
 </body>
+<script src="JS/shape.js"></script>
 
 </html>
