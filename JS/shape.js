@@ -53,7 +53,7 @@ function reset() {
     widthResult.innerText = "50px";
     heightResult.innerText = "50px";
     bgColorResult.innerText = "black";
-    bdRadiusResult.innerText = "none";
+    bdRadiusResult.innerText = "0px";
     bdStyleResult.innerText = "none";
     bdWidthResult.innerText = "1px";
     bdColorResult.innerText = "black";
@@ -227,33 +227,33 @@ function getValue(type, value) {
         heightResult.innerHTML = `${value};`;
     }
     if (type === 3) {
-        heightResult.innerHTML = `${value};`;
+        bgColorResult.innerHTML = `${value};`;
     }
     if (type === 4) {
-        heightResult.innerHTML = `${value};`;
+        bdRadiusResult.innerHTML = `${value};`;
     }
     if (type === 5) {
-        heightResult.innerHTML = `${value};`;
+        bdStyleResult.innerHTML = `${value};`;
     }
     if (type === 6) {
-        heightResult.innerHTML = `${value};`;
+        bdWidthResult.innerHTML = `${value};`;
     }
     if (type === 7) {
-        heightResult.innerHTML = `${value};`;
+        bdColorhesult.innerHTML = `${value};`;
     }
     if (type === 8) {
-        heightResult.innerHTML = `${value};`;
+        boxSizingResult.innerHTML = `${value};`;
     }
     if (type === 9) {
-        heightResult.innerHTML = `${value};`;
+        olStyleResult.innerHTML = `${value};`;
     }
     if (type === 10) {
-        heightResult.innerHTML = `${value};`;
+        olOffsetResult.innerHTML = `${value};`;
     }
     if (type === 11) {
-        heightResult.innerHTML = `${value};`;
+        olWidthResult.innerHTML = `${value};`;
     }
     if (type === 12) {
-        heightResult.innerHTML = `${value};`;
+        olColorResult.innerHTML = `${value};`;
     }
 }
