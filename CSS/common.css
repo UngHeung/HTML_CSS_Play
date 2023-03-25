@@ -85,7 +85,7 @@ header>input[type="checkbox"] {
 }
 
 header>input[type="checkbox"]:checked+label+nav {
-    height: calc(100vh - 170px);
+    transform: scale(1, 1);
 }
 
 header>label {
@@ -106,19 +106,19 @@ header>label>img {
 .content-navi {
     position: absolute;
     top: 100px;
-    left: calc(50% - 450px);
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 
-    width: 900px;
-    height: 0;
+    width: 100vw;
+    height: calc(100vh - 170px);
+    transform: scale(1, 0);
 
     background-color: rgba(165, 165, 165, 0.9);
 
-    transition: height .5s cubic-bezier(0, 0.03, 0, 0.85);
+    transition: transform .5s cubic-bezier(0, 0.03, 0, 0.85);
     overflow-y: hidden;
 }
 
