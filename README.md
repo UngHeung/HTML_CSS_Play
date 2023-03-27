@@ -136,6 +136,8 @@
 -   HTML
 
     -   font 페이지 추가
+    -   index 페이지 font 카드 선택 가능하도록 수정
+    -   페이지별 font 페이지 링크 연결
 
 -   CSS
 
@@ -144,3 +146,4 @@
 -   JS
 
     -   font 미리보기 텍스트 선택옵션 구현 기능 추가
+    -   font-weight를 text-shadow로 구현

@@ -43,7 +43,7 @@
     height: 50px;
     background-color: #333333;
 
-    transition: .3s cubic-bezier(0.84, -0.22, 0.13, 1.48);
+    transition: .7s cubic-bezier(0.84, -0.22, 0.13, 1.48);
 }
 
 /* input wrapper */
