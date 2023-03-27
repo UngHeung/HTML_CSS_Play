@@ -32,8 +32,8 @@
         <nav class="content-navi">
             <ul>
                 <li><a href="shape-style.html">shape</a></li>
-                <!--
                 <li><a href="font-style.html">font</a></li>
+                <!--
                 <li><a href="shadow-style.html">font</a></li>
                 <li><a href="space-style.html">space</a></li>
                 <li><a href="position-style.html">position</a></li>
@@ -47,7 +47,122 @@
     </header>
 
     <section class="content-wrap">
-
+        <!-- display wrapper -->
+        <section class="display-wrap">
+            <!-- target box -->
+            <span class="font">Insert Coin</span>
+        </section>
+        <!-- input wrapper -->
+        <section class="input-wrap">
+            <ul id="select_list">
+                <li>
+                    <!-- font-size -->
+                    <h2>font-size: <span class="fsize-result"></span></h2>
+                    <ul id="fsize">
+                        <li>
+                            <input type="radio" name="fsize" id="fsize-30px" value="30px" checked>
+                            <label for="fsize-30px">30px</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fsize" id="fsize-20px" value="20px">
+                            <label for="fsize-20px">20px</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fsize" id="fsize-10px" value="10px">
+                            <label for="fsize-10px">10px</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- font-style -->
+                    <h2>font-style: <span class="fstyle-result"></span></h2>
+                    <ul id="fstyle">
+                        <li>
+                            <input type="radio" name="fstyle" id="fstyle-normal" value="normal" checked>
+                            <label for="fstyle-normal">normal</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fstyle" id="fstyle-italic" value="italic">
+                            <label for="fstyle-italic">italic</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fstyle" id="fstyle-oblique" value="oblique">
+                            <label for="fstyle-oblique">oblique</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- font-Weight -->
+                    <h2>font-Weight: <span class="fweight-result"></span></h2>
+                    <ul id="fweight">
+                        <li>
+                            <input type="radio" name="fweight" id="fweight-100" value="100" checked>
+                            <label for="fweight-100">100</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fweight" id="fweight-500" value="500">
+                            <label for="fweight-500">500</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fweight" id="fweight-900" value="900">
+                            <label for="fweight-900">900</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- color -->
+                    <h2>color: <span class="fcolor-result"></span></h2>
+                    <ul id="fcolor">
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-black" value="black" checked>
+                            <label for="fcolor-black">black</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-palevioletred" value="palevioletred">
+                            <label for="fcolor-palevioletred">palevioletred</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-royalblue" value="royalblue">
+                            <label for="fcolor-royalblue">royalblue</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-gold" value="gold">
+                            <label for="fcolor-gold">gold</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-rebeccapurple" value="rebeccapurple">
+                            <label for="fcolor-rebeccapurple">rebeccapurple</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-greenyellow" value="greenyellow">
+                            <label for="fcolor-greenyellow">greenyellow</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="fcolor" id="fcolor-orangered" value="orangered">
+                            <label for="fcolor-orangered">orangered</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- text-transform -->
+                    <h2>text-transform: <span class="txt-transform-result"></span></h2>
+                    <ul id="txt_transform">
+                        <li>
+                            <input type="radio" name="txt-transform" id="txt-transform-capitalize" value="capitalize" checked>
+                            <label for="txt-transform-capitalize">capitalize</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="txt-transform" id="txt-transform-lowercase" value="lowercase">
+                            <label for="txt-transform-lowercase">lowercase</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="txt-transform" id="txt-transform-uppercase" value="uppercase">
+                            <label for="txt-transform-uppercase">uppercase</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
     </section>
 
     <footer>
@@ -69,5 +184,6 @@
     </footer>
 
 </body>
+<script src="JS/font.js"></script>
 
 </html>
