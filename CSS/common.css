@@ -16,6 +16,7 @@
 
     --blink-2: blink .2s alternate infinite;
     --blink-5: blink .5s alternate infinite;
+    --blink-c: blink-c 2s infinite;
     --shake-2: shake .2s alternate infinite;
     --shake-5: shake .5s alternate infinite;
     --vibration-2: vibration .1s alternate-reverse 2;
@@ -271,6 +272,20 @@ footer>div {
 /* # animation */
 @keyframes blink {
     0% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink-c {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
         opacity: 0;
     }
 }
