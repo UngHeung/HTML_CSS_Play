@@ -272,6 +272,7 @@ footer>div {
 /* # bottom button wrap */
 .button-wrap {
     width: 60%;
+    margin-top: 30px;
 }
 
 .button-wrap ul {
