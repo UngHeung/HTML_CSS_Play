@@ -8,11 +8,11 @@ const fSizeResult = document.querySelector(".fsize-result");
 const fStyle = document.getElementsByName("fstyle");
 const fStyleResult = document.querySelector(".fstyle-result");
 
-/* color */
+/* fWeight */
 const fWeight = document.getElementsByName("fweight");
 const fWeightResult = document.querySelector(".fweight-result");
 
-/* fWeight */
+/* color */
 const fColor = document.getElementsByName("fcolor");
 const fColorResult = document.querySelector(".fcolor-result");
 
@@ -94,10 +94,10 @@ function setValue(type, value) {
             shadowX = 0;
             shadowSet();
         } else if (value == 500) {
-            shadowX = 2;
+            shadowX = 1;
             shadowSet();
-        } else {
-            shadowX = 4;
+        } else if (value == 900) {
+            shadowX = 2;
             shadowSet();
         }
         previewBox.style.fontWeight = `${value}`;
