@@ -49,22 +49,33 @@ const olColor = document.getElementsByName("ol-color");
 const olColorResult = document.querySelector(".ol-color-result");
 
 /* reset */
-function reset() {
-    widthResult.innerText = "50px";
-    heightResult.innerText = "50px";
-    bgColorResult.innerText = "black";
-    bdRadiusResult.innerText = "0px";
-    bdStyleResult.innerText = "none";
-    bdWidthResult.innerText = "1px";
-    bdColorResult.innerText = "black";
-    boxSizingResult.innerText = "content-box";
-    olStyleResult.innerText = "none";
-    olOffsetResult.innerText = "0px";
-    olWidthResult.innerText = "1px";
-    olColorResult.innerText = "black";
+const styleList = [width, height, bgColor, bdRadius, bdStyle, bdWidth, bdColor, boxSizing, olStyle, olOffset, olWidth, olColor];
+
+function reset(type) {
+    if (type == 0 || type == 1) {
+        widthResult.innerText = "50px";
+        heightResult.innerText = "50px";
+        bgColorResult.innerText = "black";
+        bdRadiusResult.innerText = "0px";
+        bdStyleResult.innerText = "none";
+        bdWidthResult.innerText = "1px";
+        bdColorResult.innerText = "black";
+        boxSizingResult.innerText = "content-box";
+        olStyleResult.innerText = "none";
+        olOffsetResult.innerText = "0px";
+        olWidthResult.innerText = "1px";
+        olColorResult.innerText = "black";
+    }
+
+    if (type == 1) {
+        for (let i = 0; i < styleList.length; i++) {
+            styleList[i][0].checked = true;
+            setValue(i + 1, styleList[i][0].value);
+        }
+    }
 }
 
-reset();
+reset(0);
 
 /* input function */
 

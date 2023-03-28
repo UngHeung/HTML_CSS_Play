@@ -21,15 +21,26 @@ const txtTransform = document.getElementsByName("txt-transform");
 const txtTransformResult = document.querySelector(".txt-transform-result");
 
 /* reset */
-function reset() {
-    fSizeResult.innerText = "30px";
-    fStyleResult.innerText = "normal";
-    fWeightResult.innerText = "100";
-    fColorResult.innerText = "black";
-    txtTransformResult.innerText = "capitalize";
+const styleList = [fSize, fStyle, fWeight, fColor, txtTransform];
+
+function reset(type) {
+    if (type == 0 || type == 1) {
+        fSizeResult.innerText = "30px";
+        fStyleResult.innerText = "normal";
+        fWeightResult.innerText = "100";
+        fColorResult.innerText = "black";
+        txtTransformResult.innerText = "capitalize";
+    }
+
+    if (type == 1) {
+        for (let i = 0; i < styleList.length; i++) {
+            styleList[i][0].checked = true;
+            setValue(i + 1, styleList[i][0].value);
+        }
+    }
 }
 
-reset();
+reset(0);
 
 /* input function */
 
