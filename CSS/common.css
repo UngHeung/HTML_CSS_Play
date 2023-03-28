@@ -269,6 +269,153 @@ footer>div {
     margin-right: 4px;
 }
 
+/* # bottom button wrap */
+.button-wrap {
+    width: 60%;
+}
+
+.button-wrap ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main, reset button */
+.button-wrap button {
+    font-size: 1px;
+    color: transparent;
+}
+
+.button-wrap ul>li:nth-child(2) {
+    padding-top: 45px;
+}
+
+.main-reset-btn {
+    position: relative;
+    width: 40px;
+    height: 8px;
+
+    border-radius: 6px;
+    background-color: #bbbbbb;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+
+    transform: rotate(-30deg);
+    cursor: pointer;
+}
+
+.main-reset-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 8px;
+
+    border-radius: 6px;
+    box-shadow: inset 1px 1px #cccccc;
+}
+
+.main-reset-btn::after {
+    position: absolute;
+    top: 12px;
+
+    font-style: italic;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.main-reset-btn:nth-child(1)::after {
+    left: 4px;
+    content: "MAIN";
+}
+
+.main-reset-btn:nth-child(2)::after {
+    left: 2px;
+    content: "RESET";
+}
+
+.main-reset-btn:hover {
+    filter: brightness(103%);
+}
+
+.main-reset-btn:active {
+    background-color: #aaaaaa;
+    box-shadow: none;
+}
+
+.main-reset-btn:active::before {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+/* AB button */
+.ab-btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    background-color: #C50024;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+
+    transform: rotate(-30deg);
+    cursor: pointer;
+}
+
+.ab-btn:nth-child(1) {
+    top: 10px
+}
+
+.ab-btn:nth-child(2) {
+    top: -10px;
+}
+
+.ab-btn::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    box-shadow: inset 2px 2px #EE6C84;
+}
+
+.ab-btn::after {
+    position: absolute;
+    top: 48px;
+    left: 16px;
+
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-main);
+}
+
+.ab-btn:nth-child(1)::after {
+    content: "A";
+}
+
+.ab-btn:nth-child(2)::after {
+    content: "B";
+}
+
+.ab-btn:hover {
+    filter: brightness(105%);
+}
+
+.ab-btn:active {
+    background-color: #9d001d;
+    box-shadow: none;
+}
+
+.ab-btn:active::before {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
 /* # animation */
 @keyframes blink {
     0% {
@@ -315,5 +462,9 @@ footer>div {
     footer>div {
         padding: 0 50px;
         box-sizing: border-box;
+    }
+
+    .button-wrap {
+        width: 80%;
     }
 }
