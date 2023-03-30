@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transform style</title>
+    <title>shape style</title>
+    <!-- font Barlow  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/shape.css">
+    <!-- favicon -->
+    <link rel="icon" type="image/svg" href="favicon.svg">
 </head>
-<!-- font Barlow  -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-<!-- font Press Start 2P -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<!-- style -->
-<link rel="stylesheet" href="CSS/reset.css">
-<link rel="stylesheet" href="CSS/common.css">
-<link rel="stylesheet" href="CSS/transform.css">
-<!-- favicon -->
-<link rel="icon" type="image/svg" href="favicon.svg">
 
 <body>
     <!-- header : h1, nav -->
@@ -32,8 +32,8 @@
         <nav class="content-navi">
             <ul>
                 <li><a href="shape-style.html">shape</a></li>
-                <!--
                 <li><a href="font-style.html">font</a></li>
+                <!--
                 <li><a href="shadow-style.html">font</a></li>
                 <li><a href="space-style.html">space</a></li>
                 <li><a href="position-style.html">position</a></li>
@@ -45,29 +45,66 @@
             </ul>
         </nav>
     </header>
-
+    <!-- content wrapper -->
     <section class="content-wrap">
+        <!-- display wrapper -->
+        <section class="display-wrap">
+            <!-- target box -->
+            <div class="box"></div>
+        </section>
+        <!-- input wrapper -->
+        <section class="input-wrap">
 
-    </section>
+        </section>
+        <!-- button wrapper -->
+        <section class="button-wrap">
+            <ul>
+                <li class="direction">
+                    <a href="">
+                        <img src="images/icon/black-direction-button.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html"><button type="buttn" class="main-reset-btn">Main</button></a>
+                    <button type="button" class="main-reset-btn" onclick="reset(1);">Reset</button>
+                </li>
+                <li>
+                    <button type="button" class="ab-btn">A</button>
+                    <button type="button" class="ab-btn">B</button>
+                </li>
+            </ul>
+        </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <div>
+                <!-- mail -->
+                <section class="mail">
+                    <img src="images/icon/mail-naver.svg" alt="mail naver">
+                    <a href="mailto:beehive2838@naver.com">beehive2838@naver.com</a>
+                </section>
+                <!-- blog, copyright -->
+                <section class="blog">
+                    <!-- blog, github -->
+                    <article>
+                        <a href="https://github.com/UngHeung/HTML_CSS_Play" target="_blank">
+                            <img src="images/icon/github.svg" alt="github">
+                        </a>
+                        <a href="https://baby-eungae.tistory.com/" target="_blank">
+                            <img src="images/icon/blog-tistory.svg" alt="blog tistory">
+                        </a>
+                        <a href="https://velog.io/@beehive2838" target="_blank">
+                            <img src="images/icon/blog-velog.svg" alt="blog velog">
+                        </a>
+                    </article>
+                    <!-- copyright -->
+                    <p>ungHeung</p>
+                </section>
+            </div>
 
-    <footer>
-        <div>
-            <section class="mail">
-                <img src="images/icon/mail-naver.svg" alt="mail naver">
-                <a href="mailto:beehive2838@naver.com">beehive2838@naver.com</a>
-            </section>
-            <section class="blog">
-                <article>
-                    <a href="https://github.com/UngHeung/HTML_CSS_Play" target="_blank"><img src="images/icon/github.svg" alt="github"></a>
-                    <a href="https://baby-eungae.tistory.com/" target="_blank"><img src="images/icon/blog-tistory.svg" alt="blog tistory"></a>
-                    <a href="https://velog.io/@beehive2838" target="_blank"><img src="images/icon/blog-velog.svg" alt="blog velog"></a>
-                </article>
-                <p>ungHeung</p>
-            </section>
-        </div>
-
-    </footer>
+        </footer>
 
 </body>
+<script src="JS/shape.js"></script>
 
 </html>

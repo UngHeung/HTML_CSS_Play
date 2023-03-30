@@ -18,7 +18,7 @@
     <!-- style -->
     <link rel="stylesheet" href="CSS/reset.css">
     <link rel="stylesheet" href="CSS/common.css">
-    <link rel="stylesheet" href="CSS/shape.css">
+    <link rel="stylesheet" href="CSS/shadow.css">
     <!-- favicon -->
     <link rel="icon" type="image/svg" href="favicon.svg">
 </head>
@@ -32,8 +32,8 @@
         <nav class="content-navi">
             <ul>
                 <li><a href="shape-style.html">shape</a></li>
-                <!--
                 <li><a href="font-style.html">font</a></li>
+                <!--
                 <li><a href="shadow-style.html">font</a></li>
                 <li><a href="space-style.html">space</a></li>
                 <li><a href="position-style.html">position</a></li>
@@ -54,32 +54,85 @@
         </section>
         <!-- input wrapper -->
         <section class="input-wrap">
-
+            <ul id="select_list">
+                <li>
+                    <h2>box-shadow: <span class="box-shadow-result"></span></h2>
+                    <ul>
+                        <li>
+                            <label for="">inset</label>
+                        </li>
+                        <li>
+                            <label for="">x-axis</label>
+                            <input type="number" name="" id="" max="100" placeholder="-100px ~ 100px">
+                        </li>
+                        <li>
+                            <label for="">y-axis</label>
+                            <input type="number" name="" id="" max="100" placeholder="-100px ~ 100px">
+                        </li>
+                        <li>
+                            <label for="">blur</label>
+                            <input type="number" name="" id="" max="10" placeholder="0 ~ 10px">
+                        </li>
+                        <li>
+                            <label for="">spread</label>
+                            <input type="number" name="" id="" max="10" placeholder="0 ~ 10px">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>text-shadow: <span class="text-shadow-result"></span></h2>
+                </li>
+            </ul>
         </section>
-    </section>
-    <!-- footer -->
-    <footer>
-        <div>
-            <!-- mail -->
-            <section class="mail">
-                <img src="images/icon/mail-naver.svg" alt="mail naver">
-                <a href="mailto:beehive2838@naver.com">beehive2838@naver.com</a>
-            </section>
-            <!-- blog, copyright -->
-            <section class="blog">
-                <!-- blog, github -->
-                <article>
-                    <a href="https://github.com/UngHeung/HTML_CSS_Play" target="_blank"><img src="images/icon/github.svg" alt="github"></a>
-                    <a href="https://baby-eungae.tistory.com/" target="_blank"><img src="images/icon/blog-tistory.svg" alt="blog tistory"></a>
-                    <a href="https://velog.io/@beehive2838" target="_blank"><img src="images/icon/blog-velog.svg" alt="blog velog"></a>
-                </article>
-                <!-- copyright -->
-                <p>ungHeung</p>
-            </section>
-        </div>
+        <!-- button wrapper -->
+        <section class="button-wrap">
+            <ul>
+                <li class="direction">
+                    <a href="">
+                        <img src="images/icon/black-direction-button.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html"><button type="buttn" class="main-reset-btn">Main</button></a>
+                    <button type="button" class="main-reset-btn" onclick="reset(1);">Reset</button>
+                </li>
+                <li>
+                    <button type="button" class="ab-btn">A</button>
+                    <button type="button" class="ab-btn">B</button>
+                </li>
+            </ul>
+        </section>
+        </main>
+        <!-- footer -->
+        <footer>
+            <div>
+                <!-- mail -->
+                <section class="mail">
+                    <img src="images/icon/mail-naver.svg" alt="mail naver">
+                    <a href="mailto:beehive2838@naver.com">beehive2838@naver.com</a>
+                </section>
+                <!-- blog, copyright -->
+                <section class="blog">
+                    <!-- blog, github -->
+                    <article>
+                        <a href="https://github.com/UngHeung/HTML_CSS_Play" target="_blank">
+                            <img src="images/icon/github.svg" alt="github">
+                        </a>
+                        <a href="https://baby-eungae.tistory.com/" target="_blank">
+                            <img src="images/icon/blog-tistory.svg" alt="blog tistory">
+                        </a>
+                        <a href="https://velog.io/@beehive2838" target="_blank">
+                            <img src="images/icon/blog-velog.svg" alt="blog velog">
+                        </a>
+                    </article>
+                    <!-- copyright -->
+                    <p>ungHeung</p>
+                </section>
+            </div>
 
-    </footer>
+        </footer>
 
 </body>
+<script src="JS/shape.js"></script>
 
 </html>
